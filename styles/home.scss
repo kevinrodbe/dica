@@ -1,0 +1,33 @@
+@import 'credly-section';
+@import 'talks-section';
+@import 'me-section';
+
+.canvas-bg {
+  display: block;
+  height: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+}
+
+.main-box {
+  max-width: 780px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.list-rs {
+  width: 100%;
+
+  li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.sub-title--my-rs {
+  &::before {
+    background-image: url('public/icons/512/014-social-media.png');
+  }
+}

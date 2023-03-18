@@ -1,0 +1,69 @@
+.sub-title--credly {
+  &::before {
+    background-image: url('public/icons/512/013-certificate-1.png');
+  }
+}
+
+.credly__glove-wrapper {
+  @media (min-width: 992px) {
+    &:hover {
+      .credly__glove-box {
+        max-width: 300px;
+
+        .credly__glove {
+          height: auto;
+          opacity: 1;
+          width: 100%;
+          visibility: visible;
+        }
+
+        .credly__badge {
+          position: absolute;
+          max-width: 80px;
+        }
+      }
+    }
+  }
+}
+
+.credly__glove-box {
+  text-align: center;
+  margin-top: 100px;
+  position: relative;
+  margin: auto;
+  min-height: 580px;
+}
+
+.credly__glove {
+  max-width: 300px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  transition: all 0.3s;
+}
+
+.credly__badge {
+  max-width: 180px;
+  transition: all 0.3s;
+}
+
+.credly__badge--1 {
+  top: 155px;
+  left: -25px;
+}
+
+.credly__badge--2 {
+  top: 140px;
+  left: 30px;
+}
+
+.credly__badge--3 {
+  top: 130px;
+  left: 90px;
+}
+
+.credly__badge--4 {
+  top: 135px;
+  left: 145px;
+}

@@ -1,0 +1,46 @@
+.sub-title--talks {
+  &::before {
+    background-image: url('public/icons/512/011-speech.png');
+  }
+}
+
+.talks {
+  text-align: center;
+  width: 100%;
+
+  li {
+    display: inline-block;
+    max-width: 570px;
+    padding-left: 40px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &::before {
+      background-image: url('public/icons/256/034-voice-recording.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 30px;
+    }
+  }
+}
+
+.talk-link {
+  span {
+    display: block;
+  }
+
+  .talk-link__date {
+    font-size: 16px;
+  }
+}
