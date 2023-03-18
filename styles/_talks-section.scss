@@ -1,6 +1,6 @@
 .sub-title--talks {
   &::before {
-    background-image: url('public/icons/512/011-speech.png');
+    background-image: url('../public/icons/512/011-speech.png');
   }
 }
 
@@ -21,7 +21,7 @@
     }
 
     &::before {
-      background-image: url('public/icons/256/034-voice-recording.png');
+      background-image: url('../public/icons/256/034-voice-recording.png');
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
