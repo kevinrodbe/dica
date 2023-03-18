@@ -46,6 +46,10 @@
 .credly__badge {
   max-width: 180px;
   transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.15);
+  }
 }
 
 .credly__badge--1 {
