@@ -1,3 +1,7 @@
+.section-credly {
+  min-height: 800px;
+}
+
 .sub-title--credly {
   &::before {
     background-image: url('../public/icons/512/013-certificate-1.png');
@@ -5,10 +9,16 @@
 }
 
 .credly__glove-wrapper {
+  position: relative;
+  min-height: 580px;
+
   @media (min-width: 992px) {
     &:hover {
       .credly__glove-box {
+        animation: toUp 1.5s infinite;
         max-width: 300px;
+        position: absolute;
+        width: 100%;
 
         .credly__glove {
           height: auto;
@@ -28,10 +38,17 @@
 
 .credly__glove-box {
   text-align: center;
-  margin-top: 100px;
   position: relative;
   margin: auto;
-  min-height: 580px;
+  top: 0;
+}
+
+.credly__glove-box--left {
+  left: 0;
+}
+
+.credly__glove-box--right {
+  right: 0;
 }
 
 .credly__glove {
@@ -43,6 +60,10 @@
   transition: all 0.3s;
 }
 
+.credly__glove--right {
+  transform: scaleX(-1);
+}
+
 .credly__badge {
   max-width: 180px;
   transition: all 0.3s;
@@ -52,22 +73,66 @@
   }
 }
 
-.credly__badge--1 {
+.credly__badge--left-1 {
   top: 155px;
   left: -25px;
 }
 
-.credly__badge--2 {
+.credly__badge--left-2 {
   top: 140px;
   left: 30px;
 }
 
-.credly__badge--3 {
+.credly__badge--left-3 {
   top: 130px;
   left: 90px;
 }
 
-.credly__badge--4 {
+.credly__badge--left-4 {
   top: 135px;
   left: 145px;
+}
+
+.credly__badge--left-5 {
+  top: 210px;
+  left: 190px;
+}
+
+.credly__badge--right-1 {
+  top: 210px;
+  left: 30px;
+}
+
+.credly__badge--right-2 {
+  top: 145px;
+  left: 85px;
+}
+
+.credly__badge--right-3 {
+  top: 135px;
+  right: 80px;
+}
+
+.credly__badge--right-4 {
+  top: 125px;
+  right: 25px;
+}
+
+.credly__badge--right-5 {
+  top: 150px;
+  right: -20px;
+}
+
+@keyframes toUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-50px);
+  }
+
+  10% {
+    transform: translateY(-0);
+  }
 }
